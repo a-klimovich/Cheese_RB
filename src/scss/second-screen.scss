@@ -4,16 +4,23 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   text-align: center;
 
-  min-height: 410px;
+  min-height: 663px;
+  padding-top: 30px;
   
   background-image: url('../assets/secondPage-bg.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 65px;
+  }
 
   .content {
     display: flex;
@@ -24,6 +31,8 @@
       border-collapse: collapse;
       font-style: italic;
       font-weight: 600;
+      font-size: 28px;
+      line-height: 34px;
 
       tr {
         width: 100%;
@@ -50,8 +59,9 @@
         }
       }
 
-      tr:nth-child(even) {
+      tr:nth-child(odd) {
         background-color: $orange;
+        color: $white;
       }
     }
   }

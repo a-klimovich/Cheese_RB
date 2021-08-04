@@ -15,7 +15,7 @@
       padding: 0;
 
       a {
-        font-weight: 700;
+        font-weight: 900;
         font-size: 14px;
         line-height: 17px;
       }
@@ -33,7 +33,9 @@
   .copyright {
     text-align: center;
     color: $white;
+    font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    letter-spacing: .7px;
   }
 }

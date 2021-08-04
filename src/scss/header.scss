@@ -4,21 +4,101 @@
   position: absolute;
   width: 100%;
   padding-top: 10px;
-  z-index: 2;
+  z-index: 9;
+  height: 70px;
+  
+  &.active {
+    transition: all .5s;
+    position: fixed;
+    top: 0;
+    background-color: $dark-blue;
+  }
 
   nav {
     display: flex;
     justify-content: space-between;
 
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      position: relative;
+
+      width: 30px;
+      height: 20px;
+      
+      &.active {
+        .line-center {
+          display: none;
+        }
+        
+        .line-top,
+        .line-bottom {
+          transition: all 0.5s;
+          position: absolute;
+        }
+
+        .line-top {
+          top: 50%;
+          transform: rotate(-45deg);
+        }
+
+        .line-bottom {
+          bottom: 50%;
+          transform: rotate(45deg);
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 4px;
+        background: $white;
+      }
+    }
+
+    .menu {
+      &.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        transition: all .4s;
+        top: 70px;
+        left: -30px;
+        width: 50%;
+  
+        li {
+          background-color: $dark-blue;
+          padding: 15px;
+          margin: 0;
+  
+          &::after {
+            display: none;
+          }
+  
+          &:hover {
+            background-color: $orange;;
+  
+            a {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
     ul {
       display: flex;
-      justify-content: space-between;
-      width: 60%;
+      justify-content: flex-end;
+      width: 100%;
+      padding-left: 30px;
       list-style: none;
 
       li {
         height: fit-content;
         position: relative;
+        margin-right: 60px;
+        white-space: nowrap;
         
         &::after {
           transition: all .4s;
@@ -39,7 +119,28 @@
       }
 
       a {
-        font-weight: 700;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  @media (max-width: 996px) {
+    padding-top: 8px;
+    background-color: $dark-blue;
+
+    nav {
+      flex-direction: row-reverse;
+
+      .hamburger {
+        margin-top: 15px;
+        display: flex;
+      }
+
+      ul {
+        position: absolute;
+        left: -100%;
       }
     }
   }

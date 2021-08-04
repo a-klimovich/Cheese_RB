@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'HarmoniaSansProCyr';
-  src: url('./fonts/HarmoniaSansProCyr-Light.otf');
+  src: url('../fonts/HarmoniaSansProCyr-Light.otf');
   
   font-weight: 400;
   font-style: normal;
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'HarmoniaSansProCyr';
-  src: url('./fonts/HarmoniaSansProCyr-LightIt.otf');
+  src: url('../fonts/HarmoniaSansProCyr-LightIt.otf');
   
   font-weight: 400;
   font-style: italic;
@@ -19,23 +19,7 @@
 
 @font-face {
   font-family: 'HarmoniaSansProCyr';
-  src: url('./fonts/HarmoniaSansProCyr-Black.otf');
-  
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'HarmoniaSansProCyr';
-  src: url('./fonts/HarmoniaSansProCyr-BlackIt.otf');
-  
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'HarmoniaSansProCyr';
-  src: url('./fonts/HarmoniaSansProCyr-SemiBd.otf');
+  src: url('../fonts/HarmoniaSansProCyr-Black.otf');
   
   font-weight: 700;
   font-style: normal;
@@ -43,7 +27,7 @@
 
 @font-face {
   font-family: 'HarmoniaSansProCyr';
-  src: url('./fonts/HarmoniaSansProCyr-SemiBdIt.otf');
+  src: url('../fonts/HarmoniaSansProCyr-BlackIt.otf');
   
   font-weight: 700;
   font-style: italic;
@@ -51,7 +35,23 @@
 
 @font-face {
   font-family: 'HarmoniaSansProCyr';
-  src: url('./fonts/HarmoniaSansProCyr-Bold.otf');
+  src: url('../fonts/HarmoniaSansProCyr-SemiBd.otf');
+  
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr';
+  src: url('../fonts/HarmoniaSansProCyr-SemiBdIt.otf');
+  
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr';
+  src: url('../fonts/HarmoniaSansProCyr-Bold.otf');
   
   font-weight: 900;
   font-style: normal;
@@ -59,7 +59,7 @@
 
 @font-face {
   font-family: 'HarmoniaSansProCyr';
-  src: url('./fonts/HarmoniaSansProCyr-BoldIt.otf');
+  src: url('../fonts/HarmoniaSansProCyr-BoldIt.otf');
   
   font-weight: 900;
   font-style: italic;
@@ -69,7 +69,7 @@
 
 @font-face {
   font-family: 'UniSans';
-  src: url('./fonts/UniSansHeavy.otf');
+  src: url('../fonts/UniSansHeavy.otf');
   
   font-weight: 900;
   font-style: normal;
@@ -77,7 +77,7 @@
 
 @font-face {
   font-family: 'UniSans';
-  src: url('./fonts/UniSansHeavyItalic.otf');
+  src: url('../fonts/UniSansHeavyItalic.otf');
   
   font-weight: 900;
   font-style: italic;
@@ -85,7 +85,7 @@
 
 @font-face {
   font-family: 'UniSans';
-  src: url('./fonts/UniSansThin.otf');
+  src: url('../fonts/UniSansThin.otf');
   
   font-weight: 400;
   font-style: normal;
@@ -93,7 +93,7 @@
 
 @font-face {
   font-family: 'UniSans';
-  src: url('./fonts/UniSansThinItalic.otf');
+  src: url('../fonts/UniSansThinItalic.otf');
   
   font-weight: 400;
   font-style: italic;
