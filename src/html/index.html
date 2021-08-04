@@ -4,19 +4,230 @@
   <body>
     <header class="header">
       <div class="container">
-        <h1>Hola</h1>
+        <nav>
+          <div class="logo">
+            <img src="./assets/logo.svg" alt="" />
+          </div>
+
+          <ul>
+            <li><a href="#">О ПРОДУКТЕ</a></li>
+            <li><a href="#">О ПРЕДПРИЯТИИ</a></li>
+            <li><a href="#">ДОСТАВКА И ЦЕНА</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main class="main">
-      <div class="container">
-        <h1>Main</h1>
-      </div>
+      <section class="first-screen">
+        <div class="first-screen__info">
+          <h1 class="title">СМЕСЬ СУХАЯ</h1>
+          <p class="subtitle">
+            для приготовления мягкого весового мороженого и молочных коктейлей
+          </p>
+          <a class="more-info" href="#">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+      </section>
+
+      <section class="second-screen">
+        <h2 class="second-screen__title">
+          Сухая смесь для молочного мороженого <br />
+          с ароматом ванили
+        </h2>
+
+        <div class="content">
+          <table>
+            <tr>
+              <td class="custom-right-border">Торговая марка</td>
+              <td>“Бринко-Айс”</td>
+            </tr>
+            <tr>
+              <td class="custom-right-border">Жирность</td>
+              <td>13,3%</td>
+            </tr>
+            <tr>
+              <td class="custom-right-border">Вес</td>
+              <td>2 кг, металлизированный пакет</td>
+            </tr>
+            <tr>
+              <td class="custom-right-border">Упаковка</td>
+              <td>Картонный ящик</td>
+            </tr>
+            <tr>
+              <td class="custom-right-border">Количество в тарном месте</td>
+              <td>2 штуки</td>
+            </tr>
+            <tr>
+              <td class="custom-right-border">Условия хранения</td>
+              <td>18 месяцев</td>
+            </tr>
+            <tr>
+              <td class="custom-right-border">Код ТН ВЭД</td>
+              <td>1901909900</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="composition-product">
+        <div class="container">
+          <div class="content">
+            <p class="title">
+              БЕЗ РАСТИТЕЛЬНЫХ ЖИРОВ. ИЗГОТОВЛЕНА ИЗ НАТУРАЛЬНЫХ ВЫСОКОКАЧЕСТВЕННЫХ
+              КОМПОНЕНТОВ:
+            </p>
+    
+            <ul>
+              <li>- молоко сухое цельное</li>
+              <li>- сахарная пудра</li>
+              <li>- ароматизатор «ванилин»</li>
+              <li>- система натуральных</li>
+              <li>- стабилизаторов и эмульгаторов</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-product">
+        <div class="container">
+          <div class="about-product__box">
+            @@include('./about-product-card.html', {
+              'title': 'ОПИСАНИЕ',
+              'image': './assets/content_image_01.png',
+              'text': 'Смесь сухая для мороженого (2кг) предназначена для приготовления мягкого весового мороженого, а также для молочных коктейлей.',
+            })
+
+            @@include('./about-product-card.html', {
+              'title': 'РАЗВЕДЕНИЕ',
+              'image': './assets/content_image_02.png',
+              'text': 'Смешать порошкообразную массу с жидкостью для получения сырья необходимой консистенции. В качестве жидкости можно использовать воду, молоко или сок в любом сочетании.',
+            })
+
+            @@include('./about-product-card.html', {
+              'title': 'РЕЗУЛЬТАТ',
+              'image': './assets/content_image_03.png',
+              'text': 'На выходе получается кремовая консистенция, имеющая идеальный баланс насыщенности вкуса, аромата, сладости и текстуры.',
+            })
+          </div>
+  
+          <p class="about-product__info">
+            Срок годности  смесей сухих для мороженого 18 месяцев с даты  изготовления  при  температуре от 0°с до 20°с  и  относительной  влажности не более 65%.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-company">
+        <div class="container">
+          <div class="title under-line">О ПРЕДПРИЯТИИ</div>
+        </div>
+
+        <div class="image-bg"></div>
+
+        <div class="container">
+          <div class="text">
+            <p>ОАО «Кобринский маслодельно-сыродельный завод» приглашает к сотрудничеству компании, работающие на рынке молочной отрасли пищевой промышленности.
+              Сегодня ОАО «Кобринский МСЗ» современное предприятие со своими традициями,
+              высокой культурой  производства,  оснащенное   современным  автоматизированным оборудованием, высококвалифицированными специалистами.
+            </p>
+
+            <br>
+
+            <p>
+              80 лет  ОАО «Кобринский МСЗ»  вырабатывает  широкий ассортимент натуральной,
+              высококачественной,  безопасную  продукции, соответствующей  требованиям
+              международных  стандартов  ИСО,  НАССР   и  имеющей  большой  спрос  не  только
+              в Беларуси, но и далеко  за  её  пределами.
+            </p>
+
+            <br>
+
+            <p>Информацию о  выпускаемой  продукции
+              можно получить на фирменном сайте (имеется английская версия).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="delivery">
+        <div class="container">
+          <p class="title under-line">ДОСТАВКА И ЦЕНА</p>
+          
+          <div class="delivery__info">
+            <div class="h1 subtitle">
+              Цена: <span class="price">596 руб. / 2кг</span> + залоговый НДС.
+            </div>
+
+            <p class="text">
+              Продукция может отгружаться ж/д контейнерами и автотранспортом. Таможенное оформление отгрузок производится за счёт предприятия.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <p class="title under-line">СВЯЖИТЕСЬ С НАМИ</p>
+        
+        <div class="mb-4 row">
+          <div class="col">
+            <div class="info">
+              <ul class="contacts-list head-contacts">
+                <li class="list-title">Начальник отдела маркетинга и сбыта:</li>
+                <li>+375 29 234-56-83 (Viber, WhatsApp, Telegram)</a></li>
+                <li><a href="tel:+375 1642 4-16-91">+375 1642 4-16-91</a></li>
+                <li><a href="mailto:kbrmsz@gmail.com">e-mail: kbrmsz@gmail.com</a></li>
+              </ul>
+
+              <ul class="contacts-list marketing-contacts">
+                <li class="list-title">Отдел маркетинга:</li>
+                <li><a href="tel:+375 1642 3-54-63">+375 1642 3-54-63</a></li>
+                <li><a href="mailto:biryk84@mail.ru">e-mail: biryk84@mail.ru</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <form action="#">
+              <input type="text" placeholder="Представьтесь*" required>
+              <input type="text" placeholder="Город*" required>
+              <input type="tel" placeholder="Телефон*" required>
+
+              <a class="form-submit-btn" type="submit">ЗАКАЗАТЬ ЗВОНОК</a>
+            </form>
+          </div>
+        </div>
+
+        <div class="social">
+          <div class="social__list">
+            <a href="#"><img src="../assets/social_ok_blue.svg" alt=""></a>
+            <a href="#"><img src="../assets/social_inst_blue.svg" alt=""></a>
+          </div>
+
+          <p>пишите нам в соцсетях</p>
+        </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        footer
+        <nav>
+          <ul>
+            <li><a href="#">О ПРОДУКТЕ</a></li>
+            <li><a href="#">О ПРЕДПРИЯТИИ</a></li>
+          </ul>
+
+          <div class="footer__logo">
+            <img src="./assets/logo.svg" alt="logo">
+          </div>
+          
+          <ul>
+            <li><a href="#">ДОСТАВКА И ЦЕНА</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+
+        <p class="copyright">© Все права защищены 2021.</p>
       </div>
     </footer>
   </body>

@@ -1,0 +1,53 @@
+@import './variables';
+
+.first-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('../assets/firstpage-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  &__info {
+    position: absolute;
+    left: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    max-width: 560px;
+
+    .title {
+      font-style: italic;
+      line-height: 82px;
+    }
+
+    .subtitle {
+      font-size: 42px;
+      line-height: 50.5px;
+      margin-bottom: 7px;
+    }
+
+    .more-info {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background-color: #ffad4d;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 25px;
+      border-radius: 25px;
+      
+      &:hover {
+        background-color: $dark-blue;
+        color: $white;
+      }
+    }
+  }
+}

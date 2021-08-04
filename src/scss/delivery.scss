@@ -1,0 +1,51 @@
+@import './variables';
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-image: url('../assets/lastPage-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 840px;
+  padding-top: 22px;
+  color: $white;
+  margin-bottom: 46px;
+
+  .title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 43px;
+    margin-bottom: 85px;
+  }
+
+  .under-line {
+    &::after {
+      background: $white;
+    }
+  }
+
+  &__info {
+    max-width: 500px;
+
+    .subtitle {
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 44px;
+      text-transform: uppercase;
+      color: #FFD026;
+    }
+
+    .text {
+      font-size: 30px;
+      line-height: 36px;
+      text-align: justify;
+      color: $dark-blue;
+    }
+  }
+}

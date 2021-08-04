@@ -1,0 +1,86 @@
+@import './variables';
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+
+  .title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 43px;
+    margin-bottom: 85px;
+    text-align: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    .contacts-list.marketing-contacts {
+      margin-bottom: 0;
+    }
+
+    .contacts-list {
+      margin-bottom: 40px;
+
+      .list-title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 7px;
+      }
+
+      li, a {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $dark-blue;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .form-submit-btn {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background-color: #ffad4d;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 8px 25px;
+      border-radius: 25px;
+      width: fit-content;
+      
+      &:hover {
+        background-color: $dark-blue;
+        color: $white;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 6px;
+    font-size: 24px;
+    line-height: 29px;
+
+    &__list {
+      display: flex;
+
+      a {
+        margin-right: 12px;
+      }
+    }
+  }
+}

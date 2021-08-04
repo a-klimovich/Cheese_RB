@@ -1,0 +1,32 @@
+@import './variables';
+
+.about-company {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 55px;
+
+  .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+  }
+
+  .image-bg {
+    background-image: url('../assets/factory-photo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 360px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+  }
+}

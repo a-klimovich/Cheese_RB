@@ -1,0 +1,46 @@
+@import './variables';
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  z-index: 2;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      list-style: none;
+
+      li {
+        height: fit-content;
+        position: relative;
+        
+        &::after {
+          transition: all .4s;
+          content: '';
+          display: block;
+          width: 100%;
+          position: absolute;
+          bottom: 0px;
+          height: 2px;
+        }
+
+        &:hover {
+          &::after {
+            bottom: -4px;
+            background-color: $orange;
+          }
+        }
+      }
+
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+}

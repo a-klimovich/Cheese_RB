@@ -1,0 +1,58 @@
+@import './variables';
+
+.second-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  min-height: 410px;
+  
+  background-image: url('../assets/secondPage-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  .content {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 40%;
+
+    table {
+      border-collapse: collapse;
+      font-style: italic;
+      font-weight: 600;
+
+      tr {
+        width: 100%;
+        max-width: 316px;
+      }
+
+      td {
+        position: relative;
+        padding: 10px 20px;
+      }
+
+      td.custom-right-border {
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: -1.5px;
+          display: block;
+          height: 80%;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 2px;
+          background: #C8C8C8;
+        }
+      }
+
+      tr:nth-child(even) {
+        background-color: $orange;
+      }
+    }
+  }
+}
