@@ -6,7 +6,7 @@
       <div class="container">
         <nav>
           <div class="logo">
-            <img src="./assets/logo.svg" alt="" />
+            <a href="#"><img src="./assets/logo.svg" alt="" /></a>
           </div>
 
           <div class="hamburger">
@@ -15,11 +15,11 @@
             <div class="line line-bottom"></div>
           </div>
 
-          <ul class="menu">
-            <li><a href="#">О ПРОДУКТЕ</a></li>
-            <li><a href="#">О ПРЕДПРИЯТИИ</a></li>
-            <li><a href="#">ДОСТАВКА И ЦЕНА</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
+          <ul class="menu lightScroll">
+            <li><a href="#aboutProduct">О ПРОДУКТЕ</a></li>
+            <li><a href="#aboutCompany">О ПРЕДПРИЯТИИ</a></li>
+            <li><a href="#delivery">ДОСТАВКА И ЦЕНА</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
         </nav>
       </div>
@@ -34,45 +34,48 @@
           </p>
           <a class="more-info" href="#">УЗНАТЬ БОЛЬШЕ</a>
         </div>
+
+        <div id="aboutProduct"></div>
       </section>
 
       <section class="second-screen">
-        <p class="second-screen__title">
-          Сухая смесь для молочного мороженого <br />
-          с ароматом ванили
-        </p>
-
-        <div class="content">
-          <table>
-            <tr>
-              <td class="custom-right-border">Торговая марка</td>
-              <td>“Бринко-Айс”</td>
-            </tr>
-            <tr>
-              <td class="custom-right-border">Жирность</td>
-              <td>13,3%</td>
-            </tr>
-            <tr>
-              <td class="custom-right-border">Вес</td>
-              <td>2 кг, металлизированный пакет</td>
-            </tr>
-            <tr>
-              <td class="custom-right-border">Упаковка</td>
-              <td>Картонный ящик</td>
-            </tr>
-            <tr>
-              <td class="custom-right-border">Количество в тарном месте</td>
-              <td>2 штуки</td>
-            </tr>
-            <tr>
-              <td class="custom-right-border">Условия хранения</td>
-              <td>18 месяцев</td>
-            </tr>
-            <tr>
-              <td class="custom-right-border">Код ТН ВЭД</td>
-              <td>1901909900</td>
-            </tr>
-          </table>
+        <div class="container">
+          <p class="second-screen__title">
+            Сухая смесь для молочного мороженого с ароматом ванили
+          </p>
+  
+          <div class="content">
+            <table>
+              <tr>
+                <td class="custom-right-border">Торговая марка</td>
+                <td>“Бринко-Айс”</td>
+              </tr>
+              <tr>
+                <td class="custom-right-border">Жирность</td>
+                <td>13,3%</td>
+              </tr>
+              <tr>
+                <td class="custom-right-border">Вес</td>
+                <td>2 кг, металлизированный пакет</td>
+              </tr>
+              <tr>
+                <td class="custom-right-border">Упаковка</td>
+                <td>Картонный ящик</td>
+              </tr>
+              <tr>
+                <td class="custom-right-border">Количество в тарном месте</td>
+                <td>2 штуки</td>
+              </tr>
+              <tr>
+                <td class="custom-right-border">Условия хранения</td>
+                <td>18 месяцев</td>
+              </tr>
+              <tr>
+                <td class="custom-right-border">Код ТН ВЭД</td>
+                <td>1901909900</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -121,6 +124,7 @@
             Срок годности  смесей сухих для мороженого 18 месяцев с даты  изготовления  при  температуре от 0°с до 20°с  и  относительной  влажности не более 65%.
           </p>
         </div>
+        <div id="aboutCompany"></div>
       </section>
 
       <section class="about-company">
@@ -155,6 +159,8 @@
         </div>
       </section>
 
+      <div id="delivery"></div>
+
       <section class="delivery">
         <div class="container">
           <p class="title under-line">ДОСТАВКА И ЦЕНА</p>
@@ -171,6 +177,7 @@
         </div>
       </section>
 
+      <div id="contacts"></div>
       <section class="contacts">
         <div class="container">
           <p class="title under-line">СВЯЖИТЕСЬ С НАМИ</p>
@@ -205,8 +212,8 @@
 
         <div class="social">
           <div class="social__list">
-            <a href="#"><img src="../assets/social_ok_blue.svg" alt=""></a>
-            <a href="#"><img src="../assets/social_inst_blue.svg" alt=""></a>
+            <a href="#"><img src="./assets/social_ok_blue.svg" alt=""></a>
+            <a href="#"><img src="./assets/social_inst_blue.svg" alt=""></a>
           </div>
 
           <p>пишите нам в соцсетях</p>
@@ -218,18 +225,18 @@
     <footer class="footer">
       <div class="container">
         <nav>
-          <ul>
-            <li><a href="#">О ПРОДУКТЕ</a></li>
-            <li><a href="#">О ПРЕДПРИЯТИИ</a></li>
+          <ul class="left-list lightScroll">
+            <li><a href="#aboutProduct">О ПРОДУКТЕ</a></li>
+            <li><a href="#aboutCompany">О ПРЕДПРИЯТИИ</a></li>
           </ul>
 
           <div class="footer__logo">
-            <img src="./assets/logo.svg" alt="logo">
+            <a href="#"><img src="./assets/logo.svg" alt="logo"></a>
           </div>
           
-          <ul>
-            <li><a href="#">ДОСТАВКА И ЦЕНА</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
+          <ul class="right-list lightScroll">
+            <li><a href="#delivery">ДОСТАВКА И ЦЕНА</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
         </nav>
 

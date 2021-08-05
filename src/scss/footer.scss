@@ -1,8 +1,9 @@
-@import './variables';
+@import "./variables";
 
 .footer {
   background-color: $dark-blue;
   padding-bottom: 25px;
+  position: relative;
 
   nav {
     display: flex;
@@ -36,6 +37,86 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
+  }
+
+  @media (max-width: 960px) {
+    padding-bottom: 17px;
+
+    &__logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    }
+
+    nav {
+      justify-content: space-between;
+      margin: 24px 0;
+
+      .right-list {
+        justify-content: flex-end;
+      }
+
+      ul {
+        flex-wrap: wrap;
+
+        li:first-child {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 630px) {
+    padding-bottom: 10px;
+
+    &__logo {
+      width: 90px;
+    }
+
+    nav {
+      margin: 15px 0;
+
+      .right-list {
+        text-align: right;
+      }
+
+      ul {
+        display: block;
+
+        li:first-child {
+          margin-right: 0;
+          margin-bottom: 7px;
+        }
+  
+        a {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    nav {
+      ul {
+        li:first-child {
+          margin-right: 0;
+        }
+
+        a {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 9px;
+      line-height: 11px;
+    }
   }
 }

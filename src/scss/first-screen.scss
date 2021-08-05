@@ -11,6 +11,11 @@
   background-size: cover;
   height: 1045px;
 
+  @media (max-width: 960px) {
+    height: calc(448px + 70px);
+    padding-top: 100px;
+  }
+
   &__info {
     position: absolute;
     left: 48%;
@@ -22,9 +27,15 @@
     color: $white;
     max-width: 560px;
 
+    @media (max-width: 960px) {
+      height: 448px;
+    }
+    @media (max-width: 768px) {
+      left: auto;
+    }
+
     .title {
       font-style: italic;
-      line-height: 82px;
     }
 
     .subtitle {
@@ -32,6 +43,18 @@
       font-size: 42px;
       line-height: 50px;
       margin-bottom: 75px;
+
+      @media (max-width: 960px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 25px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 35px;
+      }
     }
 
     .more-info {
@@ -40,11 +63,22 @@
       text-align: center;
       background-color: #ffad4d;
       cursor: pointer;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 20px;
       line-height: 24px;
       padding: 8px 25px;
       border-radius: 25px;
+
+      @media (max-width: 960px) {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 35px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
       
       &:hover {
         background-color: $dark-blue;

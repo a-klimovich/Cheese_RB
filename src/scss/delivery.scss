@@ -15,12 +15,29 @@
   color: $white;
   margin-bottom: 46px;
 
+  @media (max-width: 960px) {
+    min-height: 561px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 322px;
+    margin-bottom: 16px;
+  }
+
   .title {
     font-weight: 600;
     font-size: 34px;
     line-height: 43px;
     margin-bottom: 85px;
     padding-bottom: 7px;
+    
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 23px;
+    }
   }
 
   .under-line {
@@ -51,6 +68,39 @@
       line-height: 36px;
       text-align: justify;
       color: $dark-blue;
+    }
+
+    @media (max-width: 960px) {
+      margin: 0 auto;
+
+      .subtitle {
+        font-size: 34px;
+      }
+  
+      .price {
+        font-size: 38px
+      }
+  
+      .text {
+        font-size: 28px;
+        color: $white;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .subtitle {
+        font-size: 24px;
+        line-height: 28px;
+      }
+  
+      .price {
+        font-size: 28px;
+      }
+  
+      .text {
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
   }
 }
